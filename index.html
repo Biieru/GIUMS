@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giums — Character & Creature Artist</title>
+  <meta name="description" content="Portfolio of Giums, Brazilian character & creature artist. Dark fantasy, draconic worlds and YATHRA, an original universe.">
+  <meta name="theme-color" content="#07060a">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#top" class="logo" aria-label="Giums — home">GIUMS</a>
+  <nav class="nav__links" id="navLinks" aria-label="Main">
+    <a href="#work"        data-i18n="nav.work">Work</a>
+    <a href="#yathra"      data-i18n="nav.yathra">Yathra</a>
+    <a href="#commissions" data-i18n="nav.commissions">Commissions</a>
+    <a href="#shop"        data-i18n="nav.shop">Shop</a>
+    <a href="#about"       data-i18n="nav.about">About</a>
+    <a href="#contact"     data-i18n="nav.contact">Contact</a>
+  </nav>
+  <div class="nav__tools">
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+    </div>
+    <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <canvas class="embers" id="embers" aria-hidden="true"></canvas>
+    <div class="hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Character &amp; Creature Artist</p>
+        <h1 class="wordmark"><span>GIUMS</span></h1>
+        <p class="hero__lead" data-i18n="hero.lead">Dark fantasy, draconic worlds and things with way too many teeth.</p>
+        <p class="hero__sub" data-i18n="hero.sub">Currently building <strong>YATHRA</strong> — an original universe.</p>
+        <div class="hero__cta">
+          <a class="btn btn--fire" href="#work" data-i18n="hero.cta1">See the work</a>
+          <a class="btn btn--ghost" href="#commissions" data-i18n="hero.cta2">Commissions</a>
+        </div>
+      </div>
+
+      <!-- Peça principal: assets/art/hero.webp -->
+      <figure class="hero__art">
+        <div class="ph tone-ember">
+          <img src="assets/art/hero.webp" width="587" height="835" alt="IGNAVRAK, a black dragon with glowing red horns, rearing up with a ribbon of fire coiling around its body" fetchpriority="high">
+        </div>
+        <figcaption data-i18n="hero.cap">Art of IGNAVRAK! Breath of the First Sun!</figcaption>
+      </figure>
+    </div>
+    <a class="scrollcue" href="#work" aria-label="Scroll"><span></span></a>
+  </section>
+
+  <!-- ============ FAIXA DE ARTES ============ -->
+  <section class="strip" aria-label="Featured artworks">
+    <div class="strip__track" id="strip"></div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section class="section" id="work">
+    <header class="section__head reveal">
+      <p class="eyebrow" data-i18n="work.eyebrow">Selected work</p>
+      <h2 data-i18n="work.title">Fangs, scales &amp; fire</h2>
+      <p class="section__intro" data-i18n="work.intro">Digital and traditional pieces — creatures, characters, concept art and OCs.</p>
+    </header>
+
+    <div class="filters reveal" id="filters" role="group" aria-label="Filter works">
+      <button type="button" class="chip is-on" data-filter="all"         data-i18n="f.all">All</button>
+      <button type="button" class="chip"       data-filter="creatures"   data-i18n="f.creatures">Creatures</button>
+      <button type="button" class="chip"       data-filter="characters"  data-i18n="f.characters">Characters</button>
+      <button type="button" class="chip"       data-filter="concept"     data-i18n="f.concept">Concept</button>
+      <button type="button" class="chip"       data-filter="ocs"         data-i18n="f.ocs">OCs</button>
+      <button type="button" class="chip"       data-filter="traditional" data-i18n="f.traditional">Traditional</button>
+      <button type="button" class="chip chip--adult" data-filter="nsfw">18+</button>
+    </div>
+
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <!-- ============ YATHRA ============ -->
+  <section class="section yathra" id="yathra">
+    <div class="yathra__bg" aria-hidden="true"></div>
+    <div class="yathra__grid">
+      <header class="reveal">
+        <p class="eyebrow" data-i18n="y.eyebrow">An original universe</p>
+        <h2 class="yathra__title">YATHRA</h2>
+        <p class="yathra__lead" data-i18n="y.lead">Three years in the making: a lore &amp; tabletop RPG worldbuilding project. A draconic world focused on conflict, LGBTQIAP+ relationships and fantastic artifacts.</p>
+        <a class="btn btn--fire" href="" data-link="patreon" target="_blank" rel="noopener" data-i18n="y.cta">Enter YATHRA on Patreon</a>
+      </header>
+
+      <div class="yathra__art reveal" aria-label="YATHRA artwork placeholders">
+        <figure><div class="ph tone-violet"><span class="ph__label">Art</span></div><figcaption data-i18n="y.t1">Conflicts</figcaption></figure>
+        <figure><div class="ph tone-crimson"><span class="ph__label">Art</span></div><figcaption data-i18n="y.t2">LGBTQIAP+ relationships</figcaption></figure>
+        <figure><div class="ph tone-ember"><span class="ph__label">Art</span></div><figcaption data-i18n="y.t3">Fantastic artifacts</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMMISSIONS ============ -->
+  <section class="section" id="commissions">
+    <header class="section__head reveal">
+      <p class="eyebrow" data-i18n="c.eyebrow">Examples &amp; prices</p>
+      <h2 data-i18n="c.title">Commissions</h2>
+      <div class="status" id="status"></div>
+    </header>
+
+    <div class="c-tools reveal">
+      <div class="seg" role="group" aria-label="Currency">
+        <button type="button" data-cur="usd" aria-pressed="true">USD $</button>
+        <button type="button" data-cur="brl" aria-pressed="false">BRL R$</button>
+      </div>
+      <p class="c-note" id="priceNote"></p>
+    </div>
+
+    <div class="services" id="services"></div>
+
+    <details class="addons reveal">
+      <summary data-i18n="c.addons">Add-ons, alterations &amp; extras</summary>
+      <ul id="addons"></ul>
+    </details>
+
+    <div class="rules reveal">
+      <h3 data-i18n="c.rulesT">Before you ask</h3>
+      <ul>
+        <li data-i18n="c.r1">Listed prices are <strong>base prices</strong> — send the design details and add-ons you want for an exact quote.</li>
+        <li data-i18n="c.r2">Orders are limited and open in seasons. Join the Discord to know when slots open.</li>
+        <li data-i18n="c.r3">Digital delivery only. No physical items.</li>
+        <li data-i18n="c.r4">NSFW is available for an extra percentage of the base price.</li>
+      </ul>
+      <div class="rules__cta">
+        <a class="btn btn--fire" href="" data-link="discord" target="_blank" rel="noopener" data-i18n="c.cta1">Join the Discord</a>
+        <a class="btn btn--ghost" href="" data-link="patreon" target="_blank" rel="noopener" data-i18n="c.cta2">Patreon</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SHOP ============ -->
+  <section class="section" id="shop">
+    <header class="section__head reveal">
+      <p class="eyebrow" data-i18n="s.eyebrow">Physical merchs?</p>
+      <h2 data-i18n="s.title">Take a piece home</h2>
+    </header>
+    <div class="shop">
+      <a class="shop__card reveal" href="" data-link="kofi" target="_blank" rel="noopener">
+        <div class="ph tone-crimson"><span class="ph__label">Prints &amp; stickers</span></div>
+        <div class="shop__body">
+          <h3>Ko-fi Store</h3>
+          <p data-i18n="s.kofi">Prints, stickers and more — worldwide.</p>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+      <a class="shop__card reveal" href="" data-link="loja" target="_blank" rel="noopener">
+        <div class="ph tone-ember"><span class="ph__label">T-shirts &amp; estampas</span></div>
+        <div class="shop__body">
+          <h3 data-i18n="s.lojaT">Loja (Brasil)</h3>
+          <p data-i18n="s.loja">T-shirts and exclusive prints, shipped inside Brazil.</p>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+      <a class="shop__card reveal" href="" data-link="patreon" target="_blank" rel="noopener">
+        <div class="ph tone-violet"><span class="ph__label">Monthly wallpapers</span></div>
+        <div class="shop__body">
+          <h3>Patreon</h3>
+          <p data-i18n="s.patreon">Wallpapers, OC lore, worldbuilding sketches, WIPs, brushes, stickers &amp; prints, discounts and the Discord group.</p>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="about__grid">
+      <figure class="about__photo reveal">
+        <div class="ph tone-bone">
+          <img src="assets/giums.webp" width="720" height="1280" alt="Portrait of Giums smiling, with bright red hair and purple dragon horns, holding two handmade dragon boxes at a stand full of art books" loading="lazy">
+        </div>
+      </figure>
+
+      <div class="about__text reveal">
+        <p class="eyebrow" data-i18n="a.eyebrow">About</p>
+        <h2 data-i18n="a.title">Hi, I'm Giu c:</h2>
+        <p data-i18n="a.p1">Brazilian visual artist born and raised in São Paulo. I've been drawing since I was a kid — it started with creatures, fueled by films and games like StarCraft and World of Warcraft, and later grew into a deep love for human anatomy.</p>
+        <p data-i18n="a.p2">Self-taught, with a bachelor's degree in Visual Arts. These days I live in dark and high fantasy, character design and building YATHRA.</p>
+        <p class="about__name" data-i18n="a.name">“Giums” is short for my name — the full one is long and gets mispronounced a lot xD</p>
+
+        <dl class="facts">
+          <div><dt data-i18n="a.toolsT">Tools</dt><dd>Photoshop · Procreate · Cintiq 22HD</dd></div>
+          <div><dt data-i18n="a.inspT">Inspired by</dt><dd>Laurel D. Austen · Mr. Jackart · Ursula Dourada · Mike Azevedo · CreatureXIII</dd></div>
+          <div><dt data-i18n="a.fromT">From</dt><dd data-i18n="a.from">São Paulo, Brazil</dd></div>
+        </dl>
+
+        <blockquote data-i18n="a.quote">Low confidence days happen. Keep going anyway.</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <header class="section__head reveal">
+      <p class="eyebrow" data-i18n="ct.eyebrow">Say hi</p>
+      <h2 data-i18n="ct.title">Let's talk dragons</h2>
+      <p class="section__intro" data-i18n="ct.intro">Questions, quotes, or just want to share your OC? Find me here.</p>
+    </header>
+
+    <ul class="socials reveal" id="socials">
+      <li><a href="" data-link="instagram"  target="_blank" rel="noopener"><span>Instagram</span><small>@giums</small></a></li>
+      <li><a href="" data-link="patreon"    target="_blank" rel="noopener"><span>Patreon</span><small>/giums</small></a></li>
+      <li><a href="" data-link="discord"    target="_blank" rel="noopener"><span>Discord</span><small>commission slots &amp; to-do list</small></a></li>
+      <li><a href="" data-link="kofi"       target="_blank" rel="noopener"><span>Ko-fi</span><small>/giumsart</small></a></li>
+      <li><a href="" data-link="deviantart" target="_blank" rel="noopener"><span>deviantART</span><small>giums</small></a></li>
+      <li><a href="" data-link="twitter"    target="_blank" rel="noopener"><span>Twitter</span><small>@giums1</small></a></li>
+      <li><a href="" data-link="twitch"     target="_blank" rel="noopener"><span>Twitch</span><small>giums</small></a></li>
+      <li id="emailRow" hidden><a href="" id="emailLink"><span>E-mail</span><small id="emailText"></small></a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <p class="logo logo--sm">GIUMS</p>
+  <p class="footer__legal" data-i18n="ft.legal">All artwork © Giums. Please don't reupload, retrace, use for commercial purposes or feed it to AI without permission.</p>
+  <p class="footer__small">© <span id="year"></span> Giums</p>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Artwork viewer">
+  <button type="button" class="lightbox__close" aria-label="Close">×</button>
+  <div class="lightbox__stage" id="lbStage"></div>
+  <p class="lightbox__title" id="lbTitle"></p>
+</dialog>
+
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

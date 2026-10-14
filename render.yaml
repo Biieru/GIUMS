@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: giums-site
+    runtime: static
+    buildCommand: echo "Static site ready"
+    staticPublishPath: .
